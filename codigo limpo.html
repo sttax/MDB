@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codigo limpo</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div id="preload"></div> <!-- Tela preta que ficará visível por 2 segundos -->
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Equipe.html">Equipe</a></li>
+            <li><a href="#">Canais</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">codigo limpo</h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <section class="server-description"> 
+            <h2></h2>  
+            <p></p>
+        </section>
+
+        <footer class="footer">
+            <button class="join-btn"></button>
+        </footer>
+    </div>
+
+    <script>
+        // Remove a tela preta após 2 segundos
+        setTimeout(function() {
+            document.getElementById('preload').style.display = 'none'; // Esconde a tela preta
+            document.body.style.display = 'block'; // Mostra o conteúdo da página
+        }, 2000); // 2000 milissegundos = 2 segundos
+    </script>
+</body>
+</html>

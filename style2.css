@@ -1,0 +1,130 @@
+/* Resetando o margin e padding para evitar problemas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #2C2F38;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Menu Lateral */
+.menu {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo translúcido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #7289DA; /* Cor do Discord */
+}
+
+/* Container principal */
+.container {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 20px;
+    background: rgba(26, 29, 38, 0.9); /* Fundo translúcido */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Header */
+.header .title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Membros */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.member-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+}
+
+.member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member-role {
+    font-size: 1.1rem;
+    color: #7289DA; /* Cor do Discord */
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
